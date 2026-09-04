@@ -4,13 +4,34 @@ body {
     padding: 0;
     background-color: #121212;
     color: #ffffff;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #000000;
+    padding: 15px;
     text-align: center;
 }
 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+}
+
+nav a:hover, nav a.active {
+    color: #ff4757;
+    border-bottom: 2px solid #ff4757;
+}
+
+/* Headers */
 header {
-    padding: 60px 20px;
+    padding: 50px 20px;
     background-color: #1f1f1f;
-    border-bottom: 2px solid #333;
+    text-align: center;
+    border-bottom: 1px solid #333;
 }
 
 header h1 {
@@ -19,28 +40,22 @@ header h1 {
     color: #ff4757;
 }
 
-.about {
-    padding: 50px 20px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #ff4757;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: #ff6b81;
-}
-
-footer {
-    padding: 30px;
+/* Main Content */
+.content-box {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
     background-color: #1f1f1f;
-    font-size: 0.9rem;
-    color: #aaa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 15px 0;
+    font-size: 1.1rem;
 }
